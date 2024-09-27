@@ -1,0 +1,368 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+.mainchairimg {
+  animation: chair 10s linear infinite;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes chair {
+  0% {
+    transform: translateY(15px);
+    background: url(/public/images/slide-1-home1-2.png);
+    background-size: 100% 100%;
+  }
+
+  25% {
+    transform: translateY(-15px);
+    background: url(/public/images/slide-1-home1-2.png);
+    background-size: 100% 100%;
+  }
+  50% {
+    transform: translateY(15px);
+    background: url(/public/images/slide-1-home1-2.png);
+    background-size: 100% 100%;
+  }
+
+  75% {
+    transform: translateY(-15px);
+    background: url(/public/images/slide-3-home1-1.png);
+    background-size: 100% 100%;
+  }
+  100%{
+    transform: translateY(15px);
+    background: url(/public/images/slide-3-home1-1.png);
+    background-size: 100% 100%;
+}
+
+
+
+
+
+}
+
+.table {
+  overflow: hidden;
+  transition-duration: 2s;
+
+}
+
+.tableimg {
+  overflow: hidden;
+  transition-duration: 2s;
+
+}
+
+
+
+.table:hover .tableimg {
+  transform: scale(1.5);
+  transition-duration: 2s;
+}
+
+
+.bedimg {
+  transition-duration: 2s;
+
+}
+
+.bedimg {
+  overflow: hidden;
+  transition-duration: 2s;
+
+}
+
+.bed {
+  overflow: hidden;
+}
+
+.bed:hover .bedimg {
+  transform: scale(1.5);
+  transition-duration: 2s;
+}
+
+
+.lampimg {
+  transition-duration: 2s;
+}
+
+.lamp {
+  overflow: hidden;
+  transition-duration: 2s;
+
+}
+
+.lamp:hover .lampimg {
+  transform: scale(1.5);
+  transition-duration: 2s;
+}
+
+.chair {
+  overflow: hidden;
+  transition-duration: 2s;
+
+}
+.chairimg{
+  transition-duration: 2s;
+
+}
+
+.chair:hover .chairimg {
+  transform: scale(1.5);
+  transition-duration: 2s;
+}
+.lampbrands{
+  overflow: hidden;
+}
+.black-lamp {
+  background: url('/public/images/file.png.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition-duration: 0.5s;
+
+  
+}
+.black-lamp:hover{
+  transform: scaleX(1.1);
+  /* transform: translateY(1.5); */
+  transition-duration: 0.5s;
+ 
+}
+
+
+
+.banner1img {
+  background: url('/public/images/banner-1.jpg');
+  background-size: 100% 100%;
+}
+
+.banner1 {
+  position: relative;
+}
+
+.banner1::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  border-bottom: 0.1px solid black;
+  top: 10px;
+  left: 15px;
+  visibility: hidden;
+}
+
+.banner1:hover::before {
+  width: 95%;
+  visibility: visible;
+  transition-duration: 1s;
+}
+
+.banner1::after {
+  position: absolute;
+  content: "";
+  border-left: 0.1px solid black;
+  height: 0;
+  top: 10px;
+  visibility: hidden;
+  left: 15px;
+
+}
+
+.banner1:hover::after {
+  visibility: visible;
+  height: 90%;
+  transition-duration: 1s;
+}
+
+
+.bannder1img {
+  position: relative;
+}
+
+.banner1img::before {
+  position: absolute;
+  content: "";
+  border-right: 0.1px solid black;
+  height: 0%;
+  top: 10px;
+  visibility: hidden;
+  left: 97.2%;
+
+}
+
+.banner1img:hover::before {
+  visibility: visible;
+  height: 90%;
+  transition-duration: 1s;
+}
+
+.banner1img::after {
+  position: absolute;
+  content: "";
+  border-bottom: 0.1px solid black;
+  height: 0%;
+  width: 0;
+  top: 93%;
+  visibility: hidden;
+  right: 16px;
+
+}
+
+.banner1img:hover::after {
+  visibility: visible;
+  width: 95%;
+  transition-duration: 1s;
+}
+
+
+.banner2img {
+  background: url('/public/images/banner-2.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.banner2 {
+  position: relative;
+}
+
+.banner2::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  border: 1px solid #ffffff;
+  top: 10px;
+  left: 15px;
+  visibility: hidden;
+}
+
+.banner2:hover::before {
+  width: 95%;
+  visibility: visible;
+  transition-duration: 1s;
+}
+
+.banner2::after {
+  position: absolute;
+  content: "";
+  border: 1px solid #ffffff;
+  height: 0;
+  top: 10px;
+  visibility: hidden;
+  left: 15px;
+
+}
+
+.banner2:hover::after {
+  visibility: visible;
+  height: 95%;
+  transition-duration: 1s;
+}
+
+
+.banner2img::before {
+  position: absolute;
+  content: "";
+  border: 1px solid #ffffff;
+  height: 0%;
+  top: 10px;  
+  visibility: hidden;
+  left: 97.2%;
+
+}
+
+.banner2img:hover::before {
+  visibility: visible;
+  height: 95%;
+  transition-duration: 1s;
+}
+
+.banner2img::after {
+  position: absolute;
+  content: "";
+  border: 1px solid #ffffff;
+  height: 0%;
+  width: 0;
+  top: 96.3%;
+  visibility: hidden;
+  right: 16px;
+
+}
+
+.banner2img:hover::after {
+  visibility: visible;
+  width: 95%;
+  transition-duration: 1s;
+}
+
+
+
+
+
+
+.banner3 {
+  background: url('/public/images/banner-3.jpg');
+  /* background-size: 100% 100%; */
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 300px) and (max-width: 720px) {
+  .banner3{
+    background-size: 200% 100%;
+  }
+}
+
+.banner3:hover {
+  background-position: center right;
+  transition: 0.5s;
+}
+
+.Blog1 {
+  overflow: hidden;
+  position: relative;
+  transition-duration: 1s;
+
+}
+
+.Blog1>img {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition-duration: 1s;
+
+}
+
+.Blog1:hover.Blog1>img {
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
+
+.blog2 {
+  overflow: hidden;
+  position: relative;
+  transition-duration: 1s;
+
+}
+
+.blog2>img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition-duration: 1s;
+
+
+}
+
+.blog2:hover.blog2>img {
+  transform: scale(1.5);
+  transition-duration: 1s;
+}
